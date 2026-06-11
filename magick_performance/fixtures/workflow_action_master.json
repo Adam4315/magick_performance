@@ -1,0 +1,51 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-05-10 20:47:11.912528",
+  "name": "Request Revision",
+  "workflow_action_name": "Request Revision"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-05-10 21:08:56.441338",
+  "name": "Finalize",
+  "workflow_action_name": "Finalize"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-05-10 21:09:34.343657",
+  "name": "Communicate to Employee",
+  "workflow_action_name": "Communicate to Employee"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-03-10 17:20:21.267179",
+  "name": "Submit to HR",
+  "workflow_action_name": "Submit to HR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-10-21 15:52:31.674785",
+  "name": "Approve",
+  "workflow_action_name": "Approve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-05-10 20:44:31.974896",
+  "name": "Submit Self Review",
+  "workflow_action_name": "Submit Self Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-10-21 15:52:31.681455",
+  "name": "Reject",
+  "workflow_action_name": "Reject"
+ }
+]

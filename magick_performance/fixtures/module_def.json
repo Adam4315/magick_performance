@@ -1,0 +1,13 @@
+[
+ {
+  "app_name": "frappe",
+  "custom": 1,
+  "docstatus": 0,
+  "doctype": "Module Def",
+  "modified": "2026-05-07 10:37:17.213156",
+  "module_name": "Magick Performance",
+  "name": "Magick Performance",
+  "package": null,
+  "restrict_to_domain": null
+ }
+]

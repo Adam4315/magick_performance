@@ -1,0 +1,83 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2026-05-10 20:18:24.153106",
+  "name": "Communicated",
+  "style": "",
+  "workflow_state_name": "Communicated"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2026-05-10 19:05:36.996321",
+  "name": "Pending Manager Approval",
+  "style": "",
+  "workflow_state_name": "Pending Manager Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "ok-sign",
+  "modified": "2025-10-21 15:52:31.640924",
+  "name": "Approved",
+  "style": "Success",
+  "workflow_state_name": "Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "remove",
+  "modified": "2025-10-21 15:52:31.645005",
+  "name": "Rejected",
+  "style": "Danger",
+  "workflow_state_name": "Rejected"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2026-05-10 20:08:35.723122",
+  "name": "Revision Requested",
+  "style": "",
+  "workflow_state_name": "Revision Requested"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2026-05-10 20:14:24.932223",
+  "name": "Manager Reviewed",
+  "style": "",
+  "workflow_state_name": "Manager Reviewed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2026-05-10 20:14:56.715260",
+  "name": "Finalized",
+  "style": "",
+  "workflow_state_name": "Finalized"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2026-03-10 16:34:45.859151",
+  "name": "Draft",
+  "style": "",
+  "workflow_state_name": "Draft"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2026-05-10 20:07:24.686539",
+  "name": "Submitted by Employee",
+  "style": "",
+  "workflow_state_name": "Submitted by Employee"
+ }
+]

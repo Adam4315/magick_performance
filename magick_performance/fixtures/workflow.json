@@ -1,0 +1,230 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Performance Evaluation",
+  "enable_action_confirmation": 0,
+  "is_active": 1,
+  "modified": "2026-06-11 11:05:44.302074",
+  "name": "Performance Evaluation",
+  "override_status": 0,
+  "send_email_alert": 0,
+  "states": [
+   {
+    "allow_edit": "Employee",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Draft",
+    "update_field": "status",
+    "update_value": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Line Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Submitted by Employee",
+    "update_field": "status",
+    "update_value": "Submitted by Employee",
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Employee",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Revision Requested",
+    "update_field": "status",
+    "update_value": "Revision Requested",
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Employee",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Finalized",
+    "update_field": "status",
+    "update_value": "Finalized",
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Submit Self Review",
+    "allow_self_approval": 1,
+    "allowed": "Employee",
+    "condition": null,
+    "next_state": "Submitted by Employee",
+    "send_email_to_creator": 0,
+    "state": "Draft",
+    "transition_tasks": null,
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Line Manager",
+    "condition": null,
+    "next_state": "Revision Requested",
+    "send_email_to_creator": 0,
+    "state": "Submitted by Employee",
+    "transition_tasks": null,
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Finalize",
+    "allow_self_approval": 1,
+    "allowed": "Line Manager",
+    "condition": null,
+    "next_state": "Finalized",
+    "send_email_to_creator": 0,
+    "state": "Submitted by Employee",
+    "transition_tasks": null,
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Revise",
+    "allow_self_approval": 1,
+    "allowed": "Employee",
+    "condition": null,
+    "next_state": "Draft",
+    "send_email_to_creator": 0,
+    "state": "Revision Requested",
+    "transition_tasks": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Performance Evaluation",
+  "workflow_state_field": "status"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "KRA and Goal Setup",
+  "enable_action_confirmation": 0,
+  "is_active": 1,
+  "modified": "2026-05-10 23:44:58.573039",
+  "name": "KRA and Goals Setup",
+  "override_status": 0,
+  "send_email_alert": 0,
+  "states": [
+   {
+    "allow_edit": "Employee",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Draft",
+    "update_field": "status",
+    "update_value": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Line Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Pending Manager Approval",
+    "update_field": "status",
+    "update_value": "Pending Manager Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Employee",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Approved",
+    "update_field": "status",
+    "update_value": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Employee",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "send_email": 1,
+    "state": "Rejected",
+    "update_field": "status",
+    "update_value": "Rejected",
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Submit for Approval",
+    "allow_self_approval": 1,
+    "allowed": "Employee",
+    "condition": null,
+    "next_state": "Pending Manager Approval",
+    "send_email_to_creator": 0,
+    "state": "Draft",
+    "transition_tasks": null,
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Line Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "send_email_to_creator": 0,
+    "state": "Pending Manager Approval",
+    "transition_tasks": null,
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Line Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "send_email_to_creator": 0,
+    "state": "Pending Manager Approval",
+    "transition_tasks": null,
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Revise",
+    "allow_self_approval": 1,
+    "allowed": "Employee",
+    "condition": null,
+    "next_state": "Draft",
+    "send_email_to_creator": 0,
+    "state": "Rejected",
+    "transition_tasks": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "KRA and Goals Setup",
+  "workflow_state_field": "status"
+ }
+]
