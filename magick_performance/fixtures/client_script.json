@@ -108,5 +108,16 @@
   "name": "Performance Evaluation employee link titles",
   "script": "// MP-Q2: ERPNext's global Employee link formatter labels every Employee link on a form with the form's\n// own employee_name, so \"Reports To\" showed the employee's name instead of the manager's. Stricter version.\nfrappe.form.link_formatters['Employee'] = function (value, doc, df) {\n    if (!doc || !value) return value;\n    if (doc.employee === value && doc.employee_name && doc.employee_name !== value) return value + ': ' + doc.employee_name;\n    if (df && df.fieldname === 'reports_to' && doc.line_manager_name) return value + ': ' + doc.line_manager_name;\n    return value;\n};\n",
   "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Performance Evaluation",
+  "enabled": 1,
+  "modified": "2026-09-18 01:34:21.833962",
+  "module": "Magick Performance",
+  "name": "Performance Evaluation kra filter",
+  "script": "frappe.ui.form.on('Performance Evaluation', {\n    setup: function(frm) {\n        // MP-Q9: only approved KRAs of the cycle can be evaluated\n        frm.set_query('kra_and_goal_setup', () => ({ filters: { status: 'Approved' } }));\n    }\n});",
+  "view": "Form"
  }
 ]
